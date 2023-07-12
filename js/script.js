@@ -3,8 +3,9 @@
 const navbarNav = document.querySelector(".navbar-nav");
 
 // ketika hamburger menu di klik
-document.querySelector("#hamburger-menu").onclick = () => {
+document.querySelector("#hamburger-menu").onclick = (e) => {
   navbarNav.classList.toggle("active");
+  e.preventDefault();
 };
 
 // Toggle class active untuk search form
